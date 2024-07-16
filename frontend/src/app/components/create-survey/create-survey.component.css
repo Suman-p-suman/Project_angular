@@ -1,0 +1,134 @@
+/* Container Styling */
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.survey-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.survey-details-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading Styling */
+.survey-details-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2em;
+}
+
+/* Form Styling */
+.survey-details-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label Styling */
+.survey-details-container label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input and Textarea Styling */
+.survey-details-container input[type="text"],
+.survey-details-container textarea,
+.survey-details-container input[type="number"] {
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Button Styling */
+.survey-details-container button {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  margin-left: 50px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.survey-details-container button.btn-dark {
+  background-color: #007bff;
+}
+
+.survey-details-container button.btn-dark:hover {
+  background-color: #0056b3;
+}
+
+.survey-details-container button.btn-secondary {
+  background-color: #6c757d;
+}
+
+.survey-details-container button.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Individual Div Styling */
+.survey-details-container div {
+  margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  margin-top: auto;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .survey-details-container {
+    padding: 20px;
+    margin: 50px auto;
+  }
+
+  .survey-details-container h2 {
+    font-size: 1.5em;
+  }
+
+  .survey-details-container input[type="text"],
+  .survey-details-container textarea,
+  .survey-details-container input[type="number"] {
+    font-size: 1em;
+  }
+
+  .survey-details-container button {
+    font-size: 1em;
+  }
+}

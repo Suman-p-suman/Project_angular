@@ -1,0 +1,22 @@
+<div class="create-rating-question-container">
+    <h2>Create Rating Question</h2>
+    <form (ngSubmit)="onSaveAndContinue()" #ratingQuestionForm="ngForm">
+      <div>
+        <label for="question">Question</label>
+        <input type="text" id="question" name="question" [(ngModel)]="question.questionText" required>
+      </div>
+  
+      <div>
+        <label for="ratingScale">Rating Scale</label>
+        <select id="ratingScale" name="ratingScale" [(ngModel)]="question.ratingScale" required>
+          <option value="" disabled>Select rating scale</option>
+          <option *ngFor="let scale of ratingScales" [value]="scale">{{ scale }}</option>
+        </select>
+      </div>
+      
+      <button type="button" (click)="onReset()">Reset</button>
+      <button type="submit">Save & Continue</button>
+      <button type="button" (click)="onFinish()">Finish</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,12 @@
+<div>
+    <igx-legend #legend></igx-legend>
+    <igx-category-chart 
+      #chart 
+      [dataSource]="highestGrossingMovies" 
+      [legend]="legend"
+      chartType="Column"
+      xAxisLabel="Franchise"
+      yAxisLabel="Revenue (in billions)">
+    </igx-category-chart>
+  </div>
+  

@@ -1,0 +1,12 @@
+<div class="survey-container">
+    <h3>1. Question will come here</h3>
+    <mat-radio-group class="responses">
+        <mat-radio-button class="response" *ngFor="let response of responses" [value]="response">
+            {{ response }}
+        </mat-radio-button>
+    </mat-radio-group>
+    <button mat-raised-button color="primary" (click)="save()">Save</button>
+</div>
+<div class="footer">
+    KANTAR
+</div>

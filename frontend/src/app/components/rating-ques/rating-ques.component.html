@@ -1,0 +1,16 @@
+<div class="rating-container">
+    <p class="question-number">4. <span class="question-text">Question will come here</span></p>
+    <div class="rating-scale">
+      <span class="scale-label">Bad</span>
+      <div class="rating-options">
+        <label *ngFor="let option of ratingOptions" class="rating-option">
+          <input type="radio" name="rating" [value]="option" />
+          <span class="rating-circle"></span>
+          <span class="rating-value">{{ option }}</span>
+        </label>
+      </div>
+      <span class="scale-label">Great</span>
+    </div>
+    <button class="save-button">Save</button>
+  </div>
+ 

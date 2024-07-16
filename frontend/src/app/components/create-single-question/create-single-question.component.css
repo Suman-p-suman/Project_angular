@@ -1,0 +1,103 @@
+.create-single-question-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .create-single-question-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .create-single-question-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-single-question-container label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .create-single-question-container input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .create-single-question-container .responses-container {
+    margin-top: 1rem;
+  }
+  
+  .create-single-question-container .response-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .create-single-question-container .response-input input[type="text"] {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .create-single-question-container .response-input .add-response-btn {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #343a40; /* Dark background color */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    margin-top: -0.2rem; /* Move the button up slightly */
+  }
+  
+  .create-single-question-container .response-input .add-response-btn:hover {
+    background-color: #23272b; /* Darker color on hover */
+  }
+  
+  .create-single-question-container .response-list {
+    margin-top: 0.5rem;
+  }
+  
+  .create-single-question-container .response-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .create-single-question-container .response-list ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .create-single-question-container button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .create-single-question-container button:hover {
+    background-color: #218838;
+  }
+  
+  .create-single-question-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

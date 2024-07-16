@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="survey-wrapper">
+    <div class="survey-details-container container mt-5 bg-light">
+      <form (ngSubmit)="onSaveAndContinue()" #surveyForm="ngForm">
+        <div class="text-center">
+          <h2>Survey Details</h2>
+        </div>
+        <div data-mdb-input-init class="form-outline mb-4">
+          <label class="form-label" for="name">Survey Name</label>
+          <input type="text" id="name" [(ngModel)]="survey.name" name="name" class="form-control" required />
+        </div>
+        <div data-mdb-input-init class="form-outline mb-4">
+          <label class="form-label" for="details">Additional Details</label>
+          <textarea id="details" [(ngModel)]="survey.details" name="details" class="form-control"></textarea>
+        </div>
+        <div>
+          <label for="minutes">Survey Duration (Minutes)</label>
+          <input type="number" id="minutes" [(ngModel)]="survey.minutes" name="minutes" min="0" step="1" required>
+        </div>
+        <div class="text-center">
+          <button type="button" class="btn btn-secondary btn-block mb-4" (click)="onReset()">Reset</button>
+          <button type="submit" class="btn btn-dark btn-block mb-4">Save & Continue</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="text-center">
+    <p>KANTAR</p>
+  </footer>
+</div>

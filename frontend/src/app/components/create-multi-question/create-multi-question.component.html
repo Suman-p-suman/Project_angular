@@ -1,0 +1,27 @@
+<div class="create-single-question-container">
+    <h2>Create Multi Question Response</h2>
+    <form (ngSubmit)="onSaveAndContinue()" #singleQuestionForm="ngForm">
+      <div>
+        <label for="question">Question</label>
+        <input type="text" id="question" name="question" [(ngModel)]="question.questionText" required>
+      </div>
+      
+      <div class="responses-container">
+        <label for="response">Responses</label>
+        <div class="response-input">
+          <input type="text" id="response" name="response" [(ngModel)]="newResponse" #responseInput>
+          <button type="button" class="add-response-btn" (click)="addResponse()">+</button>
+        </div>
+        <div *ngIf="responses.length > 0" class="response-list">
+          <ul>
+            <li *ngFor="let response of responses">{{ response }}</li>
+          </ul>
+        </div>
+      </div>
+      
+      <button type="button" (click)="onReset()">Reset</button>
+      <button type="submit">Save & Continue</button>
+      <button type="button" (click)="onFinish()">Finish</button>
+    </form>
+  </div>
+  

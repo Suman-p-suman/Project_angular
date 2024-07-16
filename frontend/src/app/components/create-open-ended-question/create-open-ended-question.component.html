@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="open-ended-wrapper">
+    <div class="create-open-ended-question-container container mt-5 bg-light">
+      <form (ngSubmit)="onSaveAndContinue()" #openEndedQuestionForm="ngForm">
+        <div class="text-center">
+          <h2>Create Open-Ended Question</h2>
+        </div>
+        <div class="form-outline mb-4">
+          <label class="form-label" for="question">Question</label>
+          <input type="text" id="question" name="question" [(ngModel)]="question.questionText" class="form-control" required />
+        </div>
+        <div class="text-center">
+          <button type="button" class="btn btn-secondary btn-block mb-4" (click)="onReset()">Reset</button>
+          <button type="submit" class="btn btn-dark btn-block mb-4">Save & Continue</button>
+          <button type="button" class="btn btn-success btn-block mb-4" (click)="onFinish()">Finish</button>
+        </div>
+        <div class="question-list">
+        
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="text-center">
+    <p>KANTAR</p>
+  </footer>
+</div>

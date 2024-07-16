@@ -1,0 +1,56 @@
+.create-rating-question-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .create-rating-question-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .create-rating-question-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-rating-question-container label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .create-rating-question-container input[type="text"],
+  .create-rating-question-container select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .create-rating-question-container button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff; /* Blue color for buttons */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .create-rating-question-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .create-rating-question-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

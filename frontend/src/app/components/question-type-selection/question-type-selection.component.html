@@ -1,0 +1,18 @@
+<div class="question-type-selection-container">
+    <h2>Question Type Selection</h2>
+    <form (ngSubmit)="onSaveAndContinue()" #questionTypeForm="ngForm">
+      <div>
+        <label>Question Type</label>
+        <select [(ngModel)]="selectedQuestionType" name="questionType" required>
+          <option value="" disabled>Select question type</option>
+          <option value="single">Single Response</option>
+          <option value="multi">Multi Response</option>
+          <option value="open-ended">Open-Ended</option>
+          <option value="rating">Rating</option>
+        </select>
+      </div>
+      <button type="button" (click)="onReset()">Reset</button>
+      <button type="submit" [disabled]="questionTypeForm.invalid">Save & Continue</button>
+    </form>
+  </div>
+  
